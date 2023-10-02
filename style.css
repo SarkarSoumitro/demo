@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?t=st=1696228093~exp=1696228693~hmac=bf100fc4a872defe5f3c2ea0f3ba6217fbbe76dbe3faa0a1cf2010b735994de5);
+    background-size: cover;
+    background-position: center;
+}
+
+#header{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 20px 100px;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav a{
+   margin-left: 17px;
+    font-size: 22px; 
+    text-decoration: none;
+    font-style:normal;
+    font-weight: 600;
+    color: black;
+
+}
+.nav a:hover{
+    transition: .3s;
+    font-size: 23px;
+    color: red;
+    box-shadow: inset;
+}
+#header a:hover{
+    transition: .5s;
+    font-size: 50px;
+    box-shadow: wheat;
+}
