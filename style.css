@@ -1,46 +1,149 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html, body{
     min-height: 100vh;
-    background: url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?t=st=1696228093~exp=1696228693~hmac=bf100fc4a872defe5f3c2ea0f3ba6217fbbe76dbe3faa0a1cf2010b735994de5);
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    overflow-y: hidden;
 }
-
-#header{
-    position:relative;
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F6EE;
+}
+#nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   padding: 20px 100px;
-    z-index: 100;
+    background-color: transparent;
+    padding: 10px 20px;
+    height: 15vh;
 }
-.logo{
-    font-size: 32px;
+
+/* Style the logo */
+#nav h3 {
+    margin: 0;
+    font-size: 40px;
     color: black;
-    text-decoration: none;
-    font-weight: 700;
+    padding-left: 207px;
 }
-.nav a{
-   margin-left: 17px;
-    font-size: 22px; 
+#nav #links{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    
+}
+/* Style the links container */
+#links {
+    display: flex;
+    padding-left: 200px;
+}
+
+/* Style the links */
+#links a {
     text-decoration: none;
-    font-style:normal;
-    font-weight: 600;
-    color: black;
+    color:black;
+    font-weight: bold;
+    margin-right: 20px;
+    position: relative; /* Add this */
+}
+
+/* Add an underline to links on hover */
+#links a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0); /* Initially, set the width to 0 */
+    transform-origin: left; /* Start the transform from the left */
+    transition: transform 0.2s ease-in-out;
+}
+
+#links a:hover::before {
+    transform: scaleX(1); /* Expand the width to 100% on hover */
+    transform-origin: right; /* Transform from left to right */
+}
+
+
+
+#header{
+    display: flex;
+    margin: 25px 25px;
 
 }
-.nav a:hover{
-    transition: .3s;
-    font-size: 23px;
-    color: red;
-    box-shadow: inset;
+#header #headerdes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
-#header a:hover{
-    transition: .5s;
-    font-size: 50px;
-    box-shadow: wheat;
+
+.div-50{
+    width: 50%;
+    margin: 0 auto;
 }
+
+#headerdes p{
+    font-size: 27px;
+    margin: 30px 0px;
+    width: 50%;
+    padding-right: 10px;
+}
+#headerpic img{
+     width: 80%;
+     height: auto;
+}
+#headerdes h1{
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 196px;
+}
+#headerbutton {
+    padding: 12px 32px;
+    background-color: transparent;
+    color: black;
+    font-weight: 100;
+    border-radius: 100px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid black;
+    background-image: linear-gradient(to top, transparent, transparent);
+    background-size: 100% 0%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+}
+
+#headerbutton:hover {
+    background-image: linear-gradient(to top, black, black);
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#courses{
+    height: 50vh;
+    width: 100%;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
